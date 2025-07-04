@@ -183,7 +183,25 @@ header {
   color: #ddd;
   line-height: 1.4;
 }
+.hamburger {
+   display: none;
+   flex-direction: column;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+   cursor: pointer;
+   z-index: 1002;
+ }
 
+ .hamburger span {
+   height: 4px;
+   width: 100%;
+   background: #00d7da;
+   margin: 5px 0;
+   border-radius: 2px;
+   transition: 0.4s;
+   display: block;
+ }
 footer {
   background: linear-gradient(180deg, #17003c, #0a001f);
   padding: 40px 20px 20px;
