@@ -5,14 +5,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact - Yopougon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-
   <style>
+    .cta-section {
+      max-width: 600px;
+      margin: 30px auto;
+      text-align: center;
+      background: #17003c;
+      padding: 30px 20px;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    }
+
+    .cta-section h2 {
+      color: #0ff;
+      font-size: 24px;
+      margin-bottom: 15px;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .cta-section p {
+      color: #fff;
+      font-size: 16px;
+      line-height: 1.6;
+      font-family: 'Orbitron', sans-serif;
+    }
+
     .contact-form {
       max-width: 500px;
       margin: 40px auto;
@@ -28,13 +50,14 @@
     .contact-form label {
       display: block;
       margin-bottom: 8px;
-      color:#00e9ff;
+      color: #0ff;
       font-size: 15px;
     }
 
     .contact-form input,
-    .contact-form textarea {
-      width: 100%;
+    .contact-form textarea,
+    .contact-form select {
+      width: 95%;
       padding: 10px;
       margin-bottom: 18px;
       border: none;
@@ -46,8 +69,14 @@
       resize: none;
     }
 
+    .contact-form input[type="checkbox"] {
+      width: auto;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
     .contact-form button {
-      background:#00e9ff;
+      background: #00ffff;
       color: #17003c;
       border: none;
       padding: 12px 30px;
@@ -57,7 +86,7 @@
       cursor: pointer;
       transition: background 0.3s, color 0.3s;
       font-weight: bold;
-      box-shadow: 0 0 10px#00d7da;
+      box-shadow: 0 0 10px #0ff;
     }
 
     .contact-form button:hover {
@@ -98,13 +127,47 @@
     </p>
   </section>
 
+  <section class="cta-section" data-aos="fade-up">
+    <h2>Envie de découvrir Yopougon ?</h2>
+    <p>Laissez-nous vos coordonnées et recevez nos meilleures suggestions de lieux incontournables, d’événements
+      culturels et d’expériences locales !</p>
+  </section>
+
   <form class="contact-form" data-aos="zoom-in" data-aos-delay="400" autocomplete="off">
     <label for="nom">Nom</label>
     <input type="text" id="nom" name="nom" required />
+
     <label for="email">Email</label>
     <input type="email" id="email" name="email" required />
+
+    <label for="telephone">Téléphone</label>
+    <input type="tel" id="telephone" name="telephone" placeholder="+225 01 23 45 67 89" required />
+
+    <label for="age">Âge</label>
+    <input type="number" id="age" name="age" min="10" max="100" placeholder="Votre âge" required />
+
+    <label for="ville">Ville de résidence</label>
+    <input type="text" id="ville" name="ville" placeholder="Ex : Abidjan, Bouaké..." required />
+
+    <label for="interet">Ce que vous aimeriez changer à Yopougon</label>
+    <select id="interet" name="interet" required>
+      <option value="">-- Sélectionnez une option --</option>
+      <option value="culture">Culture et traditions</option>
+      <option value="gastronomie">Gastronomie locale</option>
+      <option value="lieux">Lieux emblématiques</option>
+      <option value="histoire">Histoire</option>
+      <option value="evenements">Événements & sorties</option>
+    </select>
+
+
     <label for="message">Message</label>
     <textarea id="message" name="message" rows="5" required></textarea>
+
+    <label for="infos">Souhaitez-vous recevoir des infos sur les visites de Yopougon ?</label>
+    <input type="checkbox" id="infos" name="infos" value="oui" />
+    <span>Oui, je suis intéressé(e) !</span>
+
+    <br><br>
     <button type="submit">Envoyer</button>
   </form>
 
@@ -150,6 +213,7 @@
       <p>&copy; 2024 La Ré-découverte de Yopougon. Tous droits réservés.</p>
     </div>
   </footer>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
     AOS.init({
