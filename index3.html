@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lieux clés de Yopougon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style2.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html">
+      <div class="logo">
+        <img src="img/WhatsApp_Image_2025-06-30_à_12.24.43_d2c38894-removebg-preview.png" alt="Yopougon Logo" />
+      </div>
+    </a>
+    <div class="hamburger" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="index2.html">Culture</a>
+      <a href="lieux.html">Lieux clés</a>
+      <a href="index.html#Gastronomiques">Gastronomiques</a>
+      <a href="histoire.html">Histoire</a>
+      <a href="documentations.html">Documentations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="lieux-section" data-aos="fade-up">
+    <h2>Lieux Clés de Yopougon</h2>
+    <p class="lieux-description">
+      Yopougon regorge de lieux emblématiques mêlant modernité, traditions et vie urbaine. Des espaces culturels aux
+      centres de loisirs, découvrez les endroits incontournables qui font vibrer la commune. Ce guide est parfait pour
+      le <strong>découvrir Yopougon en famille</strong> ou entre amis et profiter pleinement du <strong>tourisme à
+        Abidjan</strong> dans cette zone dynamique.
+    </p>
+
+    <div class="lieux-container">
+      <article class="lieu" data-aos="fade-right">
+        <img src="img/Cosmos-Featured-998x749-1.jpg" alt="Cosmos">
+        <h3>Cosmos Yopougon</h3>
+        <p>Le Cosmos est un lieu emblématique de Yopougon, reconnu pour sa vie nocturne animée. Il rassemble les
+          <strong>meilleurs maquis à Yopougon</strong> ainsi que des espaces culturels où le <strong>tourisme à
+            Abidjan</strong> s’épanouit pleinement. Parfait pour <strong>découvrir Yopougon en famille</strong> ou entre
+          amis, ce lieu symbolise l’effervescence et la convivialité de la commune.</p>
+      </article>
+
+
+      <article class="lieu" data-aos="fade-up">
+        <img src="img/fifa-forward-ivoorkust-1.jpg" alt="Stade de Yopougon">
+        <h3>Stade de Yopougon</h3>
+        <p>Un lieu de rassemblement pour les matchs de football, les concerts et les grands événements populaires.</p>
+      </article>
+
+      <article class="lieu" data-aos="fade-left">
+        <img src="img/Salle-1_-vue-de-haut-_cote-2-624ba590.png" alt="Cinéma">
+        <h3>Cinéma Majestic</h3>
+        <p>Un cinéma moderne où se rencontrent les passionnés de films, entre nouveautés locales et internationales.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>À propos de Yopougon</h3>
+        <p>Découvrez le cœur vibrant d'Abidjan à travers sa culture, ses traditions et ses saveurs authentiques.</p>
+        <div class="social-icons">
+          <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" title="TikTok"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Navigation</h3>
+        <nav class="footer-nav">
+          <a href="index.html">Accueil</a>
+          <a href="index2.html">Culture</a>
+          <a href="lieux.html">Lieux clés</a>
+          <a href="index.html#Gastronomiques">Gastronomiques</a>
+          <a href="histoire.html">Histoire</a>
+          <a href="documentations.html">Documentations</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Pour plus d'informations sur Yopougon</p>
+        <p>Email: info@yopougon.com</p>
+        <p>Tél: +225 XX XX XX XX</p>
+      </div>
+      <div class="footer-section">
+        <h3>Notre localisation</h3>
+        <div style="width:100%;max-width:300px;margin:0 auto;">
+          <iframe src="https://www.google.com/maps?q=Yopougon,+Abidjan,+C%C3%B4te+d'Ivoire&output=embed" width="100%"
+            height="180" style="border:0;border-radius:12px;box-shadow:0 2px 8px #0003;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 La Ré-découverte de Yopougon. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, easing: 'ease-in-out', once: true });
+
+    const hamburger = document.getElementById('hamburger-menu');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', function () {
+      navLinks.classList.toggle('open');
+      document.body.classList.toggle('menu-open');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        document.body.classList.remove('menu-open');
+      });
+    });
+  </script>
+
+</body>
+
+</html>
