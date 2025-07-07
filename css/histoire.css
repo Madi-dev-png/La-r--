@@ -15,38 +15,44 @@
    background: rgba(0, 0, 0, 0.3);
  }
 
- .logo {
-   display: flex;
-   align-items: center;
- }
+.logo {
+  display: flex;
+  align-items: center;
+}
 
- .logo img {
-   height: 150px;
-   width: 200px;
-   border-radius: 20px;
-   transition: transform 0.3s ease;
- }
+.logo img {
+  height: 150px;
+  width: 200px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
- .logo img:hover {
-   transform: scale(1.08);
-   background-color: #3d2d88;
-   border-radius: 15px;
- }
+.logo img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px #3d2d88;
+  border-radius: 15px;
+}
 
- .nav-links a {
-   margin: 0 10px;
-   font-size: 14px;
-   color: white;
-   text-decoration: none;
-   padding: 8px 15px;
-   border-radius: 15px;
-   transition: background-color 0.3s, color 0.3s;
- }
+ .nav-links {
+  display: flex;
+  gap: 40px; 
+}
+.nav-links a {
+  font-size: 18px; 
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 10px 15px;
+}
 
  .nav-links a:hover,
  .nav-links a.active {
    background-color: #ffc24d;
    color: white;
+   border-radius:20px ;
  }
 
  .hero-section {

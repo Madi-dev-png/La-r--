@@ -1,11 +1,12 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Lexend', sans-serif;
   font-weight: 500;
   background: linear-gradient(180deg, #532b9f, #17003c);
   color: white;
-  margin: 0;
-  padding: 0;
 }
+
 
 header {
   display: flex;
@@ -24,26 +25,32 @@ header {
   height: 150px;
   width: 200px;
   border-radius: 20px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .logo img:hover {
   transform: scale(1.08);
-  background-color: #3d2d88;
+  box-shadow: 0 0 15px #3d2d88;
   border-radius: 15px;
 }
-
+.nav-links {
+  display: flex;
+  gap: 40px; 
+}
 .nav-links a {
-  margin: 0 10px;
-  font-size: 14px;
-  color: white;
+  font-size: 18px; 
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffffff;
   text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 10px 15px;
 }
 
 .nav-links a:hover {
-  color: #00d7da;
+  color: #00e9ff;
 }
-
 .lieux-section {
   padding: 60px 20px;
   text-align: center;

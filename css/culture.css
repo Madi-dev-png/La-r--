@@ -1,5 +1,4 @@
 body {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Lexend', sans-serif;
@@ -26,26 +25,32 @@ header {
   height: 150px;
   width: 200px;
   border-radius: 20px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .logo img:hover {
   transform: scale(1.08);
-  background-color: #3d2d88;
+  box-shadow: 0 0 15px #3d2d88;
   border-radius: 15px;
 }
-
+.nav-links {
+  display: flex;
+  gap: 40px; 
+}
 .nav-links a {
-  margin: 0 10px;
-  font-size: 14px;
-  color: white;
+  font-size: 18px; 
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffffff;
   text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 10px 15px;
 }
 
 .nav-links a:hover {
-  color: #00d7da;
+  color: #cc0096;
 }
-
 .Tradition {
   padding: 60px 20px;
   background: linear-gradient(to bottom, #17003c, #0a001f);
