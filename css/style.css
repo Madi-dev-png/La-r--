@@ -5,7 +5,7 @@ body {
   font-weight: 500;
   background: linear-gradient(180deg, #532b9f, #17003c);
   color: white;
-  overflow-x: hidden; /* ← empêche le scroll horizontal */
+  overflow-x: hidden;
 }
 
 
@@ -34,12 +34,14 @@ header {
   box-shadow: 0 0 15px #3d2d88;
   border-radius: 15px;
 }
+
 .nav-links {
   display: flex;
-  gap: 20px; 
+  gap: 20px;
 }
+
 .nav-links a {
-  font-size: 18px; 
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
   color: #ffffff;
@@ -191,25 +193,27 @@ header {
   color: #ddd;
   line-height: 1.4;
 }
-.hamburger {
-   display: none;
-   flex-direction: column;
-   justify-content: center;
-   width: 40px;
-   height: 40px;
-   cursor: pointer;
-   z-index: 1002;
- }
 
- .hamburger span {
-   height: 4px;
-   width: 100%;
-   background: #00d7da;
-   margin: 5px 0;
-   border-radius: 2px;
-   transition: 0.4s;
-   display: block;
- }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+.hamburger span {
+  height: 4px;
+  width: 100%;
+  background: #00d7da;
+  margin: 5px 0;
+  border-radius: 2px;
+  transition: 0.4s;
+  display: block;
+}
+
 footer {
   background: linear-gradient(180deg, #17003c, #0a001f);
   padding: 40px 20px 20px;
