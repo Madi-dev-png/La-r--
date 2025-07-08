@@ -230,7 +230,7 @@ footer {
 
 .footer-section h3 {
   color: #00e9ff;
-  font-size: 18px;
+  font-size: 48px;
   margin-bottom: 15px;
   font-family: 'Orbitron', sans-serif;
   text-transform: uppercase;
@@ -238,7 +238,7 @@ footer {
 
 .footer-section p {
   color: #ccc;
-  font-size: 14px;
+  font-size: 30px;
   line-height: 1.6;
   margin-bottom: 10px;
 }
