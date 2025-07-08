@@ -54,7 +54,7 @@ header {
   color: #00e9ff;
 }
 
-/* Sections lieux */
+
 .lieux-section {
   padding: 60px 20px;
   text-align: center;
@@ -111,7 +111,7 @@ header {
   border-radius: 10px;
 }
 
-/* Section Transport */
+
 .transport-section {
   padding: 60px;
   background-color: #1e1535;
@@ -169,7 +169,7 @@ header {
   color: #ffffff;
 }
 
-/* Footer */
+
 .footer {
   background: linear-gradient(180deg, #17003c, #0a001f);
   padding: 40px 20px 20px;
@@ -258,7 +258,6 @@ header {
   font-size: 12px;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
   header {
     flex-direction: column;

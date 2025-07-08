@@ -214,7 +214,7 @@ header {
   display: block;
 }
 
-footer {
+.footer {
   background: linear-gradient(180deg, #17003c, #0a001f);
   padding: 40px 20px 20px;
   margin-top: 60px;
@@ -234,7 +234,7 @@ footer {
 }
 
 .footer-section h3 {
-  color: #00e9ff;
+  color:#00d7da;
   font-size: 18px;
   margin-bottom: 15px;
   font-family: 'Orbitron', sans-serif;
@@ -243,7 +243,7 @@ footer {
 
 .footer-section p {
   color: #ccc;
-  font-size: 30px;
+  font-size: 14px;
   line-height: 1.6;
   margin-bottom: 10px;
 }
@@ -262,7 +262,7 @@ footer {
 }
 
 .footer-nav a:hover {
-  color: #00e9ff;
+  color: #00d7da;
 }
 
 .social-icons {
@@ -288,7 +288,7 @@ footer {
 }
 
 .social-icons a:hover {
-  background: #00e9ff;
+  background: #00d7da;
   color: #17003c;
   transform: scale(1.1);
 }
