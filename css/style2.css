@@ -5,6 +5,7 @@ body {
   font-weight: 500;
   background: linear-gradient(180deg, #532b9f, #17003c);
   color: white;
+  overflow-x: hidden;
 }
 
 header {
